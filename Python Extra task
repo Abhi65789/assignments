@@ -1,0 +1,90 @@
+#1
+from sre_constants import RANGE
+
+
+x = [100,200,300,400,500,[1,2,3,4,5,[10,20,30,40,50],6,7,8,9],600,700,800]
+
+acccess_list = x[5][:4]
+access_list_1 = x[-3:-1]
+print (acccess_list,"Access List:",access_list_1)
+
+access_list_2 = [x[0],x[2],x[4],x[-3],x[-1]]
+print(access_list_2)
+
+access_list_3 = [x[5][5][0]]
+print(access_list_3)
+
+x.reverse()
+print(x)
+
+#2---------------------------------------------------
+records = list(range(1000))
+print(records)
+
+
+#4
+for numbers in range(1,100):
+    if numbers % 3==0 and numbers % 2==0:
+        print(numbers)
+
+#5
+x = ['a','e','i','o','g','m','u']
+vowel=[]
+for char in x:
+    if char in ['a','e','i','o','u']:
+        vowel.append(char)
+        vowel.reverse()
+print(vowel)
+
+#6
+x = "hello my name is abcde"
+words = x.split()
+for word in words:
+    if len(word) % 2 == 0:
+        print(word)
+
+#7
+x=[1,2,3,4,5,6,7,8,9,-1]
+result=[]
+for i in range(len(x)):
+    for j in range (i+1,len(x)):
+        if x[i]+ x[j] == 8:
+            result.append((x[i],x[j]))
+print(result)
+
+#8
+even = []
+odd = []
+for x in range(5):
+    number = int(input("Enter a number between 1-50:"))
+    if number % 2 ==0:
+        even.append(number)
+    else:
+        odd.append(number)
+
+print(even)
+even_sum = sum(even)
+print(even_sum)
+print(odd)
+odd_sum = sum(odd)
+print(odd_sum)
+
+#9
+string = "12abcbacbaba344ab"
+character = "a"
+
+def occurence(string, character):
+    count = 0
+    for char in string:
+        if char.isalpha() and char == character:
+            count += 1
+    return count
+occurence = occurence(string, character)
+print(f"{character}={occurence}")
+
+#10
+x= (1,2,3,4,5,6,7,8,9,10)
+y=tuple(num
+for num in x
+    if num % 2 == 0)
+print(y)
