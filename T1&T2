@@ -1,0 +1,57 @@
+#1
+a,b,c = 1,2.01,'string'
+
+#2
+x = complex(4 + 2)
+print(x)
+y = int(x.real)
+print(y)
+
+#3
+x = 1
+y = 2
+temp = x
+x = y
+y = temp
+print('x:',x)
+print('y:',y)
+
+x = x + y
+y = x - y
+x = x - y
+print('x:',x)
+print('y:',y)
+
+#4
+x = input("Enter your name:")
+print(x,"is learning python")
+
+#5
+num1 = int(input("Enter your first number between 1-10:"))
+while num1<1 or num1>10:
+    num1 = int(input("Invalid. Enter your first number between 1-10:"))
+num2 = int(input("Enter your second number between 1-10:"))
+while num1<1 or num1>10:
+    num1 = int(input("Invalid. Enter your second number between 1-10:"))
+z =num1 + num2
+print(z)
+result = z + 30
+print(result)
+
+#6-----------------------------------------------------
+a = 10.4
+print(a)
+print(type(a))
+
+#7-------------------------------------------------------
+x = str(input("Enter your text:"))
+
+#8
+a = 10
+print(a)
+print(type(a))
+
+a = "Hello"
+print(a)
+print(type(a)) 
+
